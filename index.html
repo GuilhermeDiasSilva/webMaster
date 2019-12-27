@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Webmaster</title>
+    <meta charset="utf-8">
+
+    <!-- colocar para vizualizar em celulares se adequar a fonte -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- comentario: colocar icone -->
+    <link rel="shortcut icon" href="imagens/icone.png">
+    <!-- adicionar o css -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="jquery-3.4.1.min.js">
+        $(document).ready(function() {
+            //mostrar menu
+            $("#menu").click(function() {
+                $("nav").toggle();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" title="Home">
+            <img src="imagens/logo.png" alt="Webmaster" title="Webmaster">
+        </a>
+
+        <a href="#" id="menu">
+				Menu
+			</a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+							Página Inicial
+						</a>
+                </li>
+                <li>
+                    <a href="sobre.html">
+							Sobre a Empresa
+						</a>
+                </li>
+                <li>
+                    <a href="servicos.html">
+							Serviços
+						</a>
+                </li>
+                <li>
+                    <a href="contato.html">
+							Contato
+						</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- nav - barra de navegação -->
+    </header>
+    <!-- header - cabeçalho -->
+
+    <div class="banner">
+        <img src="imagens/banner1.png" alt="Marketing Solution" title="Marketing Solution">
+    </div>
+    <!-- fim do banner -->
+
+    <div class="servicos">
+        <h1 class="center">Nossos Serviços</h1>
+
+        <div class="container">
+            <div class="item center">
+                <img src="imagens/feature1.png" alt="SEO Marketing" title="SEO Marketing">
+                <h2>SEO Marketing</h2>
+                <p>Lorem ipsum</p>
+            </div>
+            <!-- fim do item 1 -->
+
+            <div class="item center">
+                <img src="imagens/feature2.png" alt="SEM Marketing" title="SEM Marketing">
+                <h2>SEM Marketing</h2>
+                <p>Lodem ipsum</p>
+            </div>
+            <!-- fim do item 2 -->
+
+            <div class="item center">
+                <img src="imagens/feature3.png" alt="E-mail Marketing" title="E-mail Marking">
+                <h2>E-mail Marketing</h2>
+                <p>Lorem ipsum</p>
+            </div>
+            <!-- fim do item 3-->
+
+        </div>
+        <!-- fim do container -->
+
+        <div class="clear"></div>
+
+        <p class="center">
+            <a href="servicos.html" title="Serviços" class="botao">
+					Mais Serviços
+				</a>
+        </p>
+
+    </div>
+    <!-- fim do servicos -->
+
+    <div class="depoimentos">
+
+        <h1 class="center">Depoimentos</h1>
+
+        <p class="center">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <p class="center">
+            <img src="imagens/profile.jpg" alt="James da Silva" title="James da Silva">
+
+            <br>
+            <strong>James da Silva</strong>
+            <br>
+            <i>CEO da Silva Corp</i>
+        </p>
+
+    </div>
+    <!-- fim dos depoimentos -->
+
+    <div class="clientes">
+        <h1 class="center">Nossos Clientes</h1>
+        <div class="container">
+            <div class="item center">
+                <img src="imagens/client1.png" alt="Bussiness Lab" title="Business Lab">
+            </div>
+            <div class="item center">
+                <img src="imagens/client2.png" alt="Excellent" title="Excellent">
+            </div>
+            <div class="item center">
+                <img src="imagens/client3.png" alt="Comcast" title="Comcast">
+            </div>
+            <div class="item center">
+                <img src="imagens/client4.png" alt="Endorff" title="Endorff">
+            </div>
+        </div>
+        <!-- fim do container -->
+    </div>
+    <!-- fim dos clientes -->
+
+    <div class="clear"></div>
+
+    <footer>
+        <div class="container">
+            <div class="item">
+                <h3>Menu</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre a Empresa</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="item">
+                <h3>Horario de funcionamento</h3>
+                <p> SEgunda à Sexta: 08h às 18h<br> Sabádos das 08h às 12h</p>
+
+                <h3>Endereço</h3>
+                <p>Rua Des. Antonio Franco Ferreira da Costa 3678, Umuarama - PR</p>
+
+                <h3>Contato</h3>
+                <p>(44)3622-2562</p>
+            </div>
+            <div class="item">
+                <h3>Mapa de Localização</h3>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7324.418719230036!2d-52.94807666795541!3d-23.38064226082755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948d45c94cf7e0e3%3A0xab82f881e856b3f7!2sRestaurante+Do+Nei!5e0!3m2!1spt-BR!2sbr!4v1557191583410!5m2!1spt-BR!2sbr"
+                    width="320" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- fim do container -->
+
+        <div class="clear"></div>
+
+        <hr>
+        <p class="center">
+            Desenvolvido por Guilherme Dias.
+        </p>
+    </footer>
+</body>
+
+</html>

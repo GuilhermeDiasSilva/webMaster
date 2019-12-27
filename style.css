@@ -1,0 +1,237 @@
+body {
+	/* retirar a margem */
+	margin: 0;
+}
+
+header {
+	/* largura */
+	width: 100%;
+	/* cor de fundo */
+	background: #FFF;
+	/* sombra */
+	box-shadow: 0px 0px 10px #CCC;
+	/*
+		1 valor - distancia esquerda direita
+		2 valor - distancia de cima p/ baixo
+		3 valor - opacidade
+		4 valor - cor
+	*/
+
+	/* altura */
+	height: 50px;
+	/* fixar o header no topo */
+	position: fixed;
+	/* top margem no topo, bottom margem embaixo */
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+nav {
+	/* jogar para a direita */
+	float: right;
+}
+
+/* formata a lista que está dentro da nav */
+nav ul {
+
+}
+
+/* formata o item da lista que está dentro da nav */
+nav ul li {
+	/* retira o marcador do item da lista */
+	list-style: none;
+	/* colocar ao lado do outro */
+	display: inline;
+}
+
+/* configuração do link no nav */
+nav ul li a {
+	/* troca tamanho de family */
+	font: 14px Montserrat, Arial, Tahoma;
+	/* trocar a cor da fonte */
+	color: #46AC63;
+	/* tirar sublinhado */
+	text-decoration: none;
+	/* margem */
+	margin: 10px;
+	/* deixar o texto em letras maiúsculas */
+	text-transform: uppercase;
+	/*
+		uppercase - tudo maiúsculo
+		lowercase - tudo minusculo
+		capitalize - primeiras letras maiúsculas
+	*/
+	/* deixar a letra negrito */
+	font-weight: bold;
+}
+
+/* mudar a cor do link ao passar o mouse */
+nav ul li a:hover {
+	color: #479686;
+}
+
+/* colar margem no logo - header */
+header img {
+	margin: 10px;
+}
+
+
+/* formatar a classe banner
+as classes devem possuir um . antes do nome
+para diferenciar as classes das tags */
+.banner {
+	background: #f1f1f1;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* classe para centralizar um conteudo */
+.container {
+	width: 960px;
+	/* centralizar na tela */
+	margin: auto;
+}
+
+
+/* Formatar o Título Principal - H1 */
+h1 {
+	font-family: Montserrat, Arial;
+	font-size: 36px;
+	color: #46AC63;
+	font-weight: bold;
+}
+
+/* formatar cada item */
+.item {
+	width: 320px;
+	float: left;
+	font-family: Montserrat, Arial;
+}
+
+/* clear para limpar/ignorar os floats */
+.clear {
+	clear: both;
+}
+
+.botao {
+	background-color: #46AC63;
+	color: #FFF;
+	padding: 10px;
+	font-family: Montserrat, Arial;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.depoimentos {
+	background: url(imagens/bg.jpg) fixed;
+	font-family: Montserrat, Arial;
+	color: #FFF;
+	padding: 50px 0;
+	margin: 30px 0;
+}
+
+.depoimentos img {
+	/* tamanho, tipo, cor */
+	border: 5px solid #FFF;
+	/* arredondar os cantos */
+	border-radius: 100%;
+}
+
+.clientes .item {
+	width: 240px;
+}
+
+.clientes img {
+	filter: grayscale(100) opacity(0.1);
+}
+
+.clientes img:hover {
+	filter: grayscale(0) opacity(1);
+}
+
+footer {
+	background: #333;
+	width: 100%;
+	padding: 15px 0;
+	font-family: Montserrat, Arial;
+	color: #FFF;
+	margin-top: 50px;
+}
+
+footer a {
+
+	color: #fff;
+
+}
+
+ /* mudar de cor qnd passar o mouse por cima de branco para amarelo*/
+footer a:hover {
+	color: #FF0;
+}
+
+#menu {
+	border: 1px solid #46AC63;
+	color: #46AC63;
+	padding: 5px;
+	margin: 5px;
+	float: right;
+	font: 14px Montserrat;
+	text-decoration: none;
+	display: none;
+}
+/* Media Queries */
+@media ( max-width: 480px ) {
+
+	#menu {
+		display: block;
+	}
+	header{
+		width: 100%;
+		float: left;
+		top: 0;
+	}
+
+	header img{
+		width: 300px;
+	}
+
+	nav {
+		width: 100%;
+		display: none;
+	}
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li {
+		display: block;
+		background-color: #FFF;
+		padding: 20px;
+		font-size: 2em;
+		text-align: center;
+	}
+
+	nav ul li a {
+		font-size: 1.5em;
+	}
+
+	.banner {
+		display: none;
+	}
+
+	.contanier {
+		width: 100%;
+	}
+
+	.item{
+		width: 100px;
+	}
+
+	.depoimentos img {
+		width: 35%;
+	}
+}
